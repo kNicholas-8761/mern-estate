@@ -19,3 +19,6 @@ const userSchema = new mongoose.Schema(
   },
   { timestamps: true } // time of creation of the user and also updates
 );
+
+const User = mongoose.model("User", userSchema);
+export default User;
